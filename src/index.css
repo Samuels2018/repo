@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #4ade80;
+    animation: fill 0.4s ease-in-out 0.4s forwards,
+        scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4ade80;
+    }
+}
+
+/* placeholder regístrate */
+
+.icon-placeholder-user::placeholder {
+    background-image: url(./assets/002-user.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    padding: 3rem;
+    color: #4E4B4B;
+    text-align: center;
+}
+
+.icon-placeholder-location::placeholder {
+    background-image: url(./assets/location_icon.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 0.7rem center;
+    color: #4E4B4B;
+    text-align: center;
+}
+
+.icon-placeholder-email::placeholder {
+    background-image: url(./assets/003-email.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 0.7rem center;
+    color: #4E4B4B;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.icon-placeholder-phone::placeholder {
+    background-image: url(./assets/001-phone.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 0.7rem center;
+    color: #4E4B4B;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.icon-placeholder-lock::placeholder {
+    background-image: url(./assets/004-lock.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 0.7rem center;
+    color: #4E4B4B;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.icon-placeholder-rrss::placeholder {
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+}
+
+
+.instagram::placeholder {
+    background-image: url(./assets/instagram_icon.svg);
+}
+
+.linkedin::placeholder {
+    background-image: url(./assets/linkedin_icon.svg);
+}
+
+.facebook::placeholder {
+    background-image: url(./assets/facebook_icon.svg);
+}
+
+.twitter::placeholder {
+    background-image: url(./assets/twitter_icon.svg);
+}
+
+.youtube::placeholder {
+    background-image: url(./assets/youtube_icon.svg);
+}
+
+.btnFacebook { 
+  width: 165px;
+  height:35px;  
+  border-radius: 4px;
+  background: #3b5998;
+  color:white;
+  border:0px transparent;  
+  text-align: center;
+  margin:5px;
+  display: inline-block;
+}
