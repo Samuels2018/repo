@@ -5,6 +5,11 @@
       "email": "samuelmedina265@gmail.com",
       "password": "123456",
       "id": 1
+    },
+    {
+      "email": "samuelmedina265@gmail.com",
+      "password": "123456",
+      "id": 2
     }
   ],
   "completeData": [
@@ -86,6 +91,96 @@
     {
       "phoneNumber": "4125035686",
       "id": 2
+    }
+  ],
+  "gestionNotificaciones": [],
+  "representanteDeportivo": [
+    {
+      "categoria": "colegial",
+      "cedulaRepresentante": "some",
+      "actividadDeportiva": "some",
+      "disciplina": "some",
+      "cedulaDelAtletaARepresentar": "some",
+      "id": 1
+    }
+  ],
+  "reporteAtletasPorDisciplinas": [
+    {
+      "actividad": "karate",
+      "disciplina": "some",
+      "registros": "10",
+      "orden": "Ascendente",
+      "id": 1
+    },
+    {
+      "actividad": "karate",
+      "disciplina": "some",
+      "registros": "20",
+      "orden": "CédulaAscendente",
+      "id": 2
+    }
+  ],
+  "reporteIndumentariaAtletas": [
+    {
+      "actividad": "karate",
+      "disciplina": "some",
+      "registros": "20",
+      "orden": "Descendente",
+      "id": 1
+    },
+    {
+      "actividad": "karate",
+      "disciplina": "some",
+      "registros": "50",
+      "orden": "Cédula",
+      "id": 2
+    }
+  ],
+  "estatusDeVigenciaPasaportesAtletas": [
+    {
+      "datecalendario": "2022-12-09",
+      "cedulaAtletaOCertificado": "",
+      "cedulaAtleta": "1234567",
+      "id": 1
+    }
+  ],
+  "estatusDeVigenciaPasaportesAtletasDisciplina": [
+    {
+      "datecalendario": "2022-12-09",
+      "actividad": "karate",
+      "disciplina": "some",
+      "registros": "30",
+      "orden": "DisciplinaDescendente",
+      "id": 1
+    }
+  ],
+  "requerimientoReporteAtletasRangoEdades": [
+    {
+      "rangoDeEdades": "10",
+      "registros": "50",
+      "orden": "CédulaDescendente",
+      "id": 1
+    },
+    {
+      "rangoDeEdades": "10",
+      "registros": "20",
+      "orden": "DisciplinaDescendente",
+      "id": 2
+    }
+  ],
+  "reporteAtletasVacunadosCovid19PorAtletas": [
+    {
+      "identification": "26747489",
+      "id": 1
+    }
+  ],
+  "reporteAtletasVacunadosCovid19PorDisciplina": [
+    {
+      "actividad": "karate",
+      "disciplina": "some",
+      "registros": "100",
+      "orden": "Cédula",
+      "id": 1
     }
   ]
 }

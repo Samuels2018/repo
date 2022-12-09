@@ -6,11 +6,13 @@ import {combineReducers} from 'redux'
 import userSlice from './features/userSlice'
 import completeDataStepsSlice from './features/completeDataStepsSlice'
 import registerStepsSlice from './features/registerStepsSlice'
+import consultasSlice from './features/consultasSlice'
 
 const reducers = combineReducers({
  	user: userSlice,
  	registerUser: registerStepsSlice,
- 	completeDatalogin: completeDataStepsSlice,         
+ 	completeDatalogin: completeDataStepsSlice,
+ 	consuntas: consultasSlice,         
 })
 
 const persistConfig = {

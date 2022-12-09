@@ -186,6 +186,7 @@ const initialState = {
 	error: false,
 	completeData: false,
 	status: "",
+	role: null
 }
 
 const userSlice = createSlice({

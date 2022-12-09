@@ -393,7 +393,7 @@ export default function Login() {
                               </div>
                               <div className="sm:w-1/3 w-4/6 flex text-center justify-between">
                                 <p className="text-sm sm:text-md text-white">¿No tienes cuenta?</p>
-                                <Link to="/Registro" className="text-[#0091FF] font-semibold hover:text-white text-sm sm:text-md">Regístrate</Link>
+                                <Link to="/register" className="text-[#0091FF] font-semibold hover:text-white text-sm sm:text-md">Regístrate</Link>
                               </div>
                             </Form>
                           </Formik>
