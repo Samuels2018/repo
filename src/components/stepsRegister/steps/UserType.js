@@ -24,11 +24,11 @@ export default function UserType({handleClick, currentStep, steps }) {
         }else {
             setEnviar(true)
             if (opcion1 === true) {
-                dispatch(RegisterStep1({tipe: 0}))
+                dispatch(RegisterStep1({userCategoryId: 1}))
             }else if (opcion2 === true) {
-                dispatch(RegisterStep1({tipe: 1}))
+                dispatch(RegisterStep1({userCategoryId: 2}))
             }else {
-                dispatch(RegisterStep1({tipe: 2}))
+                dispatch(RegisterStep1({userCategoryId: 3}))
             }
             setTimeout(() => {
                 setEnviar(false)

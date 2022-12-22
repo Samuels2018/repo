@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 
-export default function SuccessfullLoginInformation({handleClick, currentStep, steps}) {
+export default function SuccessfullLoginInformation() {
     return (
         <div className="h-full w-full flex flex-col justify-center items-center">
             <h3 className=" text-md sm:text- text-[#00D3E0] mt-6 sm:pt-2 pt-12">Paso 3 de 3</h3>
@@ -12,14 +12,14 @@ export default function SuccessfullLoginInformation({handleClick, currentStep, s
                         
                         <Link className="text-white w-full bg-gradient-to-bl from-[#9662F1] to-[#673AB7] 
                             hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-purple-300 font-medium 
-                            rounded-full text-sm px-14 py-5 text-center mb-2" to="/login"> Aceptar</Link>
+                            rounded-full text-sm px-14 py-5 text-center mb-2" to="/"> Aceptar</Link>
                         
                     </div>
                     <div className="w-4/6 mx-8">
                         
                         <Link className="text-white w-full bg-gradient-to-bl from-[#9662F1] to-[#673AB7] 
                         hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-purple-300 font-medium 
-                        rounded-full text-sm px-14 py-5 text-center mb-2" to="/login"> Cerrar</Link>
+                        rounded-full text-sm px-14 py-5 text-center mb-2" to="/"> Cerrar</Link>
                         
                     </div>
                 </div>

@@ -14,14 +14,14 @@ export default function OlvidoDatos() {
     const dispatch = useDispatch()
     const user = useSelector(state => state.user)
     const initialValues = {
-        phoneNumber: "",
+        mobilePhoneNumber: "",
     }
 
     const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
     ///^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/
 
     const validationSchema = Yup.object().shape({
-        phoneNumber: Yup.string().required('ingrese un numero de telephone').matches(phoneRegExp, 'Phone number is not valid')
+        mobilePhoneNumber: Yup.string().required('ingrese un numero de telephone').matches(phoneRegExp, 'Phone number is not valid')
     })
 
     const handleSubmit = (valores) => {
@@ -90,10 +90,10 @@ export default function OlvidoDatos() {
                                         >
                                         <Field
                                             type="tel"
-                                            name="phoneNumber"
+                                            name="mobilePhoneNumber"
                                             className="my-3 py-3 px-0 transition-all w-[80%] block  w-full text-[11px] sm:text-sm text-xs text-[#4E4B4B] rounded-lg icon-placeholder-phone shadow-sm focus:outline-none focus:shadow-outline font-semibold"
                                             placeholder="Ingrese su número telefónico"
-                                            autoComplete="phoneNumber"
+                                            autoComplete="mobilePhoneNumber"
                                             required
                                         />
                                     </div>
@@ -101,7 +101,7 @@ export default function OlvidoDatos() {
                                     <div>
 
                                         <ErrorMessage
-                                          name="phoneNumber"
+                                          name="mobilePhoneNumber"
                                           component="div"
                                           className="text-red-600 text-sm"
                                         />

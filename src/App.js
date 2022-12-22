@@ -11,8 +11,15 @@ import SuccessChangePassword from './components/verificationComponents/SuccessCh
 import ConfirmAccountSuccess from './components/verificationComponents/ConfirmAccountSuccess'
 import ChangePassword from './pages/changePassword'
 import WrongDataSession from './components/verificationComponents/WrongDataSession'
-import RegisterInformation from './components/completeDataSpotsComponents/RegisterInformation'
-import CompleteData from './pages/completeDataUserFirstLogin'
+// datos del atleta
+import CompleteDataUserFirstLogin from './pages/atlete/completeDataUserFirstLogin'
+import GeneralDataAthlete from './pages/atlete/GeneralDataAthlete'
+import PersonalDataAthlete from './pages/atlete/PersonalDataAthlete'
+import DataPassport from './pages/atlete/DataPassport'
+import MeasureAndSize from './pages/atlete/MeasureAndSize'
+import RegisterVaccine from './pages/atlete/RegisterVaccine'
+import RegisterInformation from './pages/atlete/RegisterInformation'
+
 import RepresentanteDeportivo from './pages/representanteDeportivo' 
 import ReporteAtletasPorDisciplinas from './pages/reporteAtletasPorDisciplinas'
 import SeccionDeNotificacion from './pages/seccionDeNotificacion'
@@ -53,9 +60,42 @@ function App() {
       />
 
       <Route path="/completeData" element={
-          <CompleteData />
+
+          <CompleteDataUserFirstLogin />
         }
       />
+
+      <Route path="/completeData/generalInfo" element={
+          <GeneralDataAthlete />
+        }
+      />
+
+      <Route path="/completeData/PersonalDataAthlete" element={
+          <PersonalDataAthlete />
+        }
+      />
+
+      <Route path="/completeData/AskPassport" element={
+          <DataPassport />
+        }
+      />
+
+      <Route path="/completeData/MeasureAndSize" element={
+          <MeasureAndSize />
+        }
+      />
+
+      <Route path="/completeData/RegisterVaccine" element={
+          <RegisterVaccine />
+        }
+      />
+
+      <Route path="/completeData/RegisterInformation" element={
+          <RegisterInformation />
+        }
+      />
+
+
 
       <Route path="/olvidoDatos" element={
           <OlvidoDatos />
@@ -92,12 +132,7 @@ function App() {
         }
       />
 
-      
-
-      <Route path="/registerInformation" element={
-          <RegisterInformation />
-        }
-      />
+     
 
       <Route path="/representanteDeportivo" element={
           <RepresentanteDeportivo />

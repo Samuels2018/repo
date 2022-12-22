@@ -15,7 +15,7 @@ const ValidatorRegisterFinalStep = () => {
 	console.log(data)
 
 	const handleValidator = () => {
-		const {tipe} = data.registerUser.registerSteps.step1
+		const {userCategoryId} = data.registerUser.registerSteps.step1
 	    const {
 	        firstName,
 	        secondName,
@@ -29,16 +29,11 @@ const ValidatorRegisterFinalStep = () => {
 	        passwordConfirmation,
 	    } = data.registerUser.registerSteps.step2
 
-	    const {
-	    	instagram,
-			linkedin,
-			twiter,
-			facebook,
-			youtube
-		} = data.registerUser.registerSteps.step3
+
+		const socialNetworkAccounts = [data.registerUser.registerSteps.step3]
 
 		const valores = {
-			tipe,
+			userCategoryId,
 			firstName,
 	        secondName,
 	        surname,
@@ -48,12 +43,7 @@ const ValidatorRegisterFinalStep = () => {
 	        mobilePhoneNumber,
 	        PhoneNumberConfirmation,
 	        password,
-	        passwordConfirmation,
-	        instagram,
-			linkedin,
-			twiter,
-			facebook,
-			youtube
+	        socialNetworkAccounts
 	    }
 		
 

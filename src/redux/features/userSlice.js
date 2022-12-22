@@ -184,7 +184,7 @@ return err.thunkAPI.rejectWithValue()
 const initialState = {
 	loading: false,
 	error: false,
-	completeData: false,
+	completeData: {userid},
 	status: "",
 	role: null
 }

@@ -46,158 +46,156 @@ export default function GeneralDataAthlete ({handleClick, currentStep, steps}) {
     //flex flex-col justify-center items-center
 
     return (
+        <div className="w-full h-full flex flex-col justify-center items-center">
 
-    <div className="w-full h-full flex flex-col justify-center items-center">
-
-        <a href="./../../index.html" className="flex p-2 items-center">
-         <img src={logo} className="mr-3 sm:h-16 h-12 py-1 px-1" alt="Atletas Logo"></img>
-        </a>
+            <a to="#" className="flex p-2 items-center">
+             <img src={logo} className="mr-3 sm:h-16 h-12 py-1 px-1" alt="Atletas Logo"></img>
+            </a>
 
 
-        <Formik
-            initialValues={initialValues}
-            validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-        >
-        <Form className="w-full h-full">
-            <div className="">
-                <div className="h-full w-full flex flex-col justify-center items-center">
-                    <h3 className=" text-md text-[#00D3E0]">Paso 1 de 6</h3>
-                    <h2 className="sm:text-3xl text-xl font-semibold text-white p-1 sm:py-3">Completa Tus Datos</h2>
+            <Formik
+                initialValues={initialValues}
+                validationSchema={validationSchema}
+                onSubmit={handleSubmit}
+            >
+            <Form className="w-full h-full">
+                <div className="">
+                    <div className="h-full w-full flex flex-col justify-center items-center">
+                        <h3 className=" text-md text-[#00D3E0]">Paso 1 de 6</h3>
+                        <h2 className="sm:text-3xl text-xl font-semibold text-white p-1 sm:py-3">Completa Tus Datos</h2>
 
-                    <div className="grid grid-cols-2 gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-2 w-5/6 ">
-                        <div className=" ">
-                            <label htmlFor="firstName" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Fecha de Nacimiento <mark className="bg-transparent text-red-600">*</mark></label>
+                        <div className="grid grid-cols-2 gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-2 w-5/6 ">
+                            <div className=" ">
+                                <label htmlFor="firstName" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Fecha de Nacimiento <mark className="bg-transparent text-red-600">*</mark></label>
 
-                            <Field 
-                                type="date" id="firstName" name="birthday"
-                                className=" transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="birthday" placeholder="" required 
-                            />
+                                <Field 
+                                    type="date" id="firstName" name="birthday"
+                                    className=" transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="birthday" placeholder="" required 
+                                />
 
-                            <div>
+                                <div>
 
-                                <ErrorMessage
-                                  name="birthday"
-                                  component="div"
-                                  className="text-red-600 text-sm"
+                                    <ErrorMessage
+                                      name="birthday"
+                                      component="div"
+                                      className="text-red-600 text-sm"
+                                    />
+
+                                </div>
+
+                            </div>
+
+                            
+                            <div className=" ">
+                                <label htmlFor="Edad" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Edad</label>
+
+                                <Field type="text" id="secondName" name="age"
+                                    className=" transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="age" placeholder="ejemplo: 21" 
+                                />
+
+                            </div>
+                        
+                             
+                             <div className=" ">
+                                <label htmlFor="gener" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Genero</label>
+
+                                <Field type="text" id="surname" name="gener"
+                                    className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="gener" placeholder="ejemplo: masculino" 
                                 />
 
                             </div>
 
-                        </div>
+                            <div className="">
+                                <label htmlFor="place" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Lugar de Nacimineto</label>
 
-                        
-                        <div className=" ">
-                            <label htmlFor="Edad" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Edad</label>
+                                <Field type="text" id="secondSurname" name="placebourn"
+                                    className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="placebourn" placeholder="ejemplo: Caracas" 
+                                />
 
-                            <Field type="text" id="secondName" name="age"
-                                className=" transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="age" placeholder="ejemplo: 21" 
-                            />
+                            </div>
 
-                        </div>
-                    
-                         
-                         <div className=" ">
-                            <label htmlFor="gener" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Genero</label>
+                            <div className="">
+                                <label htmlFor="estado" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Estado</label>
 
-                            <Field type="text" id="surname" name="gener"
-                                className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="gener" placeholder="ejemplo: masculino" 
-                            />
+                                <Field type="text" id="email" name="state"
+                                    className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-email shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="state" placeholder="ejemplo: Carabobo" 
+                                />
 
-                        </div>
+                            </div>
 
-                        <div className="">
-                            <label htmlFor="place" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Lugar de Nacimineto</label>
+                            <div className="">
+                                <label htmlFor="ciudad" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Ciudad</label>
 
-                            <Field type="text" id="secondSurname" name="placebourn"
-                                className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-user shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="placebourn" placeholder="ejemplo: Caracas" 
-                            />
+                                <Field type="text" id="emailconfirmation" name="city"
+                                    className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-email shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="city" placeholder="ejemplo: Caracas" 
 
-                        </div>
+                                />
 
-                        <div className="">
-                            <label htmlFor="estado" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Estado</label>
+                            </div>
 
-                            <Field type="text" id="email" name="state"
-                                className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-email shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="state" placeholder="ejemplo: Carabobo" 
-                            />
-
-                        </div>
-
-                        <div className="">
-                            <label htmlFor="ciudad" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Ciudad</label>
-
-                            <Field type="text" id="emailconfirmation" name="city"
-                                className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-email shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="city" placeholder="ejemplo: Caracas" 
-
-                            />
-
-                        </div>
-
-                        
-
-                        <div className="">
-                            <label htmlFor="municipality" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Municipio</label>
                             
-                            <Field type="parroquia" id="mobilePhoneNumber" name="municipality"
-                                className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-phone shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="municipality" placeholder="ejemplo: some municipality" 
-                            />
-                        </div>
 
-                        <div className="">
-                            <label htmlFor="parroquia" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Parroquia </label>
+                            <div className="">
+                                <label htmlFor="municipality" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Municipio</label>
+                                
+                                <Field type="parroquia" id="mobilePhoneNumber" name="municipality"
+                                    className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-phone shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="municipality" placeholder="ejemplo: some municipality" 
+                                />
+                            </div>
+
+                            <div className="">
+                                <label htmlFor="parroquia" className="font-medium font-semibold block text-xs sm:text-sm text-white mb-1">Parroquia </label>
+                                
+                                <Field type="parroquia" id="mobilePhoneNumber" name="parish"
+                                    className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
+                                    text-[#4E4B4B] rounded-lg icon-placeholder-phone shadow-sm focus:outline-none 
+                                    focus:shadow-outline font-semibold"
+                                    autoComplete="parish" placeholder="ejemplo: Santa rosa" 
+                                />
+                            </div>
+
                             
-                            <Field type="parroquia" id="mobilePhoneNumber" name="parish"
-                                className="transition-all w-full block py-2 px-0 w-full text-[11px] sm:text-sm 
-                                text-[#4E4B4B] rounded-lg icon-placeholder-phone shadow-sm focus:outline-none 
-                                focus:shadow-outline font-semibold"
-                                autoComplete="parish" placeholder="ejemplo: Santa rosa" 
-                            />
+                           
                         </div>
-
-                        
-                       
-                    </div>
-                    <div
-                    className="inline-flex w-5/6 items-center pt-8 justify-center"
-                    >
-                        <button
-                            type="submit"
-                            className="text-white w-1/2 bg-gradient-to-bl from-[#9662F1] to-[#673AB7] hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                        <div
+                        className="inline-flex w-5/6 items-center pt-8 justify-center"
                         >
-                            {currentStep === steps.length - 1 ? "Confirmar" : "Siguiente"}
-                        </button>
-                        
+                            <button
+                                type="submit"
+                                className="text-white w-1/2 bg-gradient-to-bl from-[#9662F1] to-[#673AB7] hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                            >
+                                {currentStep === steps.length - 1 ? "Confirmar" : "Siguiente"}
+                            </button>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
-        </Form>
-    </Formik>
+            </Form>
+        </Formik>
 
-    </div>
-                
-                  
+        </div>
+                           
         
     );
 
